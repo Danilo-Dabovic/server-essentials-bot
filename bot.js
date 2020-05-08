@@ -180,17 +180,15 @@ bot.on("message", async message => {
             let memberToWarn = message.mentions.members.first();
             let memberWarning = message.author.toString();
             let serverOnWhichWarned = message.guild.toString();
-            let reasonForWarn = undefined;
 
-            if(cmdArgs2[0].length > 2){
-                reasonForWarn = cmdArgs2;
-            }
-            else{
-                reasonForWarn = "Not given."
-            }
+            const warnInfoEmbed = new Discord.MessageEmbed()
+            .setTitle("Warning Info")
+            .addField(name = "Warned user:",value =  memberToWarn)
+            .addField(name = "Warned by:",value =  memberWarning)
+            .addField(name = "Warned for:",value = reasonFor);
 
-            memberToWarn.send("You have been warned by staff member " + memberWarning + " on server " + serverOnWhichWarned + "." + " Reason for warning: " + reasonForWarn);
-            message.channel.send(memberWarning + " has warned " + cmdArgs + "." + " Reason for warning: " + reasonFor);
+            memberToWarn.send("You have been warned by staff member " + memberWarning + " on server " + serverOnWhichWarned + "." + " Reason for warning: " + reasonFor);
+            message.channel.send(warnInfoEmbed);
         }
         else{
             message.author.send(message.author.toString() + ", sorry, you do not have the permission to preform this command. Please contact an admin on the server if you think this is a mistake.");
