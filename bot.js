@@ -43,6 +43,8 @@ botInfoEmbed.setTitle("ServerEssentials Bot Info")
 authorInfoEmbed.setTitle("Author Information")
 .addField(name = "Copyright",value =  "Copyright © 2020 Danilo Dabović, All rights reserved.") // You are not allowed to alter this notice.
 .addField(name = "About The Author",value =  "The ServerEssentials Bot was created by Danilo Dabović. Besides making bots, the author also makes video games! For more information visit: https://skullriongames.com") // You are not allowed to alter this notice.
+.addField(name = "Github",value =  "You may access the SevrerEssentials Github repository here: https://github.com/Danilo-Dabovic/server-essentials-bot") // You are not allowed to alter this notice.
+.addField(name = "Contact",value =  "To contact me for any reason, like report a issue or request a feature, you can email me at the following email address: skullriondev@gmail.com") // You are not allowed to alter this notice.
 .addField(name = "Contributors",value =  "Special thanks to Im.Lee for contributing to the development of this bot."); // Feel free to add your name here if you contributed in the development of the bot, but do not remove names of other people.
 
 function wait(ms){
