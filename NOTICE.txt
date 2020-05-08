@@ -1,0 +1,5 @@
+Copyright © 2020 Danilo Dabović, All rights reserved.
+
+The ServerEssentials Bot was created by Danilo Dabović. Besides making bots, the author also makes video games! For more information visit: https://skullriongames.com
+
+Special thanks to Im.Lee for contributing to the development of this bot.
