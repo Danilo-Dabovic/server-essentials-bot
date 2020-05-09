@@ -1,6 +1,8 @@
 # server-essentials-bot
 ServerEssentials bot is a simple bot providing you with essential commands for your server. 
 
+NOTE: Requires Discord.js module to run.
+
 Version: 1.0.0
 
 List of commands and features:
